@@ -3,6 +3,7 @@ obj-m += drv.o
 CC=gcc
 ccflags-y += "-g"
 ccflags-y += "-O0"
+ccflags-y += "-ggdb"
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
