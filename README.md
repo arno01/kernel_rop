@@ -5,6 +5,8 @@ privilege escalation ROP (Return Oriented Programming) chain in practice. The
 article URL for Part 1 is available at
 <https://cyseclabs.com/page?n=17012016>.
 
+[![asciicast](https://asciinema.org/a/62remtasmt80i4pk63cfu36fp.png)](https://asciinema.org/a/62remtasmt80i4pk63cfu36fp)
+
 The driver module is vulnerable to OOB access and allows arbitrary code
 execution. An arbitrary offset can be passed from user space via the provided
 ioctl(). This offset is then used as the index for the 'ops' array to obtain
